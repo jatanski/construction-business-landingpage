@@ -4,6 +4,7 @@
   position: relative;
   background-color: $header-background;
   min-height: $header-height;
+  width: 100vw;
 }
 
 .header__nav {
@@ -28,7 +29,7 @@
   max-width: 500px;
   background-color: rgba(255, 0, 119, 0.5);
   opacity: 0;
-  animation: showNavEl 1.2s 1.2s ease-out both;
+  animation: showNavEl 1.2s $showHeaderDelay ease-out both;
 }
 
 .header__nav__list {
@@ -41,11 +42,11 @@
   &-el {
     .link {
       position: relative;
-      left: 10%;
+      left: 15%;
       padding-bottom: 10px;
       color: $nav-el;
       opacity: 0;
-      animation: showNavEl 0.8s 1.2s ease-out both;
+      animation: showNavEl 0.8s $showHeaderDelay ease-out both;
       &::after {
         content: "";
         position: absolute;
@@ -109,9 +110,17 @@
 .header__description {
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 3%;
   right: 20%;
   transform: translateY(-50%);
+  opacity: 0;
+  animation: showHeaderDescription 1.5s $showHeaderDelay ease-out both;
+  @keyframes showHeaderDescription {
+    100% {
+      left: 10%;
+      opacity: 1;
+    }
+  }
   &-header {
     padding-bottom: 3vh;
     font-size: 1.8em;
@@ -143,7 +152,7 @@
   right: 0vw;
   bottom: 5vh;
   opacity: 0;
-  animation: showSliderButton 1.2s 1.2s ease-out both;
+  animation: showSliderButton 1.2s $showHeaderDelay ease-out both;
   @keyframes showSliderButton {
     100% {
       right: 5vw;
