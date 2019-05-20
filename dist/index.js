@@ -711,9 +711,9 @@ module.exports = function (css) {
   !*** ./public/img/foto1.jpg ***!
   \******************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "./img/foto1.jpg";
+module.exports = __webpack_require__.p + "e224047929ac1f9ccf9e1f18f740e01c.jpg";
 
 /***/ }),
 
@@ -722,9 +722,9 @@ module.exports = "./img/foto1.jpg";
   !*** ./public/img/foto2.jpg ***!
   \******************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "./img/foto2.jpg";
+module.exports = __webpack_require__.p + "203b344fd8c027b185c1aa903401ed45.jpg";
 
 /***/ }),
 
@@ -733,9 +733,9 @@ module.exports = "./img/foto2.jpg";
   !*** ./public/img/foto3.jpg ***!
   \******************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "./img/foto3.jpg";
+module.exports = __webpack_require__.p + "a9a5ce9d82c7b75ba0aedd482a35c56e.jpg";
 
 /***/ }),
 
@@ -744,9 +744,9 @@ module.exports = "./img/foto3.jpg";
   !*** ./public/img/foto4.jpg ***!
   \******************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "./img/foto4.jpg";
+module.exports = __webpack_require__.p + "47c451628fe696b2ff7835c0ea2bcce5.jpg";
 
 /***/ }),
 
@@ -812,6 +812,7 @@ __webpack_require__.r(__webpack_exports__);
 console.log(_public_img_foto1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a);
 var slider = document.querySelector(".header__slider");
 slider.firstElementChild.style.backgroundImage = "url(".concat(_public_img_foto1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a, ")");
+console.log(slider.firstElementChild);
 
 /***/ }),
 

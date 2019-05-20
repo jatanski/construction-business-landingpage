@@ -11,3 +11,5 @@ console.log(photo1);
 const slider = document.querySelector(".header__slider");
 
 slider.firstElementChild.style.backgroundImage = `url(${photo1})`;
+
+console.log(slider.firstElementChild);
