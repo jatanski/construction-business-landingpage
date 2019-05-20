@@ -713,7 +713,7 @@ module.exports = function (css) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "e224047929ac1f9ccf9e1f18f740e01c.jpg";
+module.exports = __webpack_require__.p + "917083b310463cc850f994153d990840.jpg";
 
 /***/ }),
 
@@ -724,7 +724,7 @@ module.exports = __webpack_require__.p + "e224047929ac1f9ccf9e1f18f740e01c.jpg";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "203b344fd8c027b185c1aa903401ed45.jpg";
+module.exports = __webpack_require__.p + "848df160d6d2e9467baf91b333fef5bc.jpg";
 
 /***/ }),
 
@@ -735,7 +735,7 @@ module.exports = __webpack_require__.p + "203b344fd8c027b185c1aa903401ed45.jpg";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "a9a5ce9d82c7b75ba0aedd482a35c56e.jpg";
+module.exports = __webpack_require__.p + "81e86b799c577072a41640ae757dac87.jpg";
 
 /***/ }),
 
@@ -746,7 +746,7 @@ module.exports = __webpack_require__.p + "a9a5ce9d82c7b75ba0aedd482a35c56e.jpg";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "47c451628fe696b2ff7835c0ea2bcce5.jpg";
+module.exports = __webpack_require__.p + "d51cc9fcd0ce8aeadba918a6b782eabc.jpg";
 
 /***/ }),
 
@@ -810,9 +810,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 console.log(_public_img_foto1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a);
-var slider = document.querySelector(".header__slider");
-slider.firstElementChild.style.backgroundImage = "url(".concat(_public_img_foto1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a, ")");
-console.log(slider.firstElementChild);
+var slider = document.querySelector(".header__slider"); // slider.firstElementChild.style.backgroundImage = `url(dist/img/${photo1})`;
+
+console.log(slider.children);
+
+for (var i = 0; i < slider.children; i++) {
+  slider.children[i].style.backgroundImage = "url(".concat(photo[i], ")");
+}
+
+console.log(slider.children);
 
 /***/ }),
 

@@ -10,6 +10,10 @@ console.log(photo1);
 
 const slider = document.querySelector(".header__slider");
 
-slider.firstElementChild.style.backgroundImage = `url(${photo1})`;
+// slider.firstElementChild.style.backgroundImage = `url(dist/img/${photo1})`;
 
-console.log(slider.firstElementChild);
+console.log(slider.children);
+for (let i = 0; i < slider.children; i++) {
+  slider.children[i].style.backgroundImage = `url(${photo[i]})`;
+}
+console.log(slider.children);
