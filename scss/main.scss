@@ -3,3 +3,9 @@
 @import "partials/_mixins.scss";
 @import "partials/components/_loader.scss";
 @import "partials/components/_header.scss";
+@import "partials/components/mobileMenu";
+
+.wrap {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}

@@ -15,28 +15,77 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./lib/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./lib/slick/slick-theme.css" />
   </head>
 
   <body>
     <div class="wrap">
-      <section class="loader">
+      <!-- <section class="loader">
         <div class="loader__header">
           <h1 class="loader__header-text">Pozwól sobie na wymarzony dom.</h1>
         </div>
-      </section>
+      </section> -->
       <header class="header">
-        <div class="header__logo"></div>
         <nav class="header__nav">
-          <ul>
-            <li><a href="#">Strona Główna</a></li>
-            <li><a href="#">O nas</a></li>
-            <li><a href="#">Projekty</a></li>
-            <li><a href="#">Cennik</a></li>
-            <li><a href="#">Opinie</a></li>
-            <li><a href="#">Kontakt</a></li>
+          <div class="header__nav-logo">Idealnyremont.pl</div>
+          <ul class="header__nav__list">
+            <li class="header__nav__list-el">
+              <a class="link" href="#">Strona Główna</a>
+            </li>
+            <li class="header__nav__list-el">
+              <a class="link" href="#">O nas</a>
+            </li>
+            <li class="header__nav__list-el">
+              <a class="link" href="#">Projekty</a>
+            </li>
+            <!-- <li class="header__nav__list-el">
+                <a class="link" href="#">Cennik</a>
+              </li> -->
+            <li class="header__nav__list-el">
+              <a class="link" href="#">Opinie</a>
+            </li>
+            <li class="header__nav__list-el">
+              <a class="link" href="#">Kontakt</a>
+            </li>
           </ul>
         </nav>
-        <div class="header__slider"></div>
+        <div class="header__mobileContainer">
+          <div class="header__mobileMenuButtonContainer" id="toggle">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+          </div>
+          <div class="header__mobileContainer__menu" id="overlay">
+            <nav class="header__mobileContainer__menu-nav">
+              <ul>
+                <li><a href="#">Strona Główna</a></li>
+                <li><a href="#">O nas</a></li>
+                <li><a href="#">Projekty</a></li>
+                <!-- <li><a href="#">Cennik</a></li> -->
+                <li><a href="#">Opinie</a></li>
+                <li><a href="#">Kontakt</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="header__slider">
+          <div class="header__slider-photo1"></div>
+          <div class="header__slider-photo2"></div>
+          <div class="header__slider-photo3"></div>
+          <div class="header__slider-photo4"></div>
+        </div>
+        <button
+          class="header-moreProjects ui black animated button"
+          tabindex="0"
+        >
+          <div class="visible content">Więcej projektów</div>
+          <div class="hidden content">Zobacz</div>
+        </button>
       </header>
       <section class="about"></section>
       <section class="projects"></section>
@@ -46,6 +95,11 @@
       <footer class="footer"></footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- <script src="semantic/dist/semantic.min.js"></script> -->
     <script src="./dist/index.js"></script>
   </body>
 </html>
