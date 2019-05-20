@@ -1,8 +1,9 @@
 @import "../variables";
 
 .header {
+  position: relative;
   background-color: $header-background;
-  min-height: 90vh;
+  min-height: $header-height;
 }
 
 .header__nav {
@@ -11,9 +12,11 @@
   right: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   z-index: 1;
   @media (min-width: 1024px) {
-    background-color: rgba(100, 100, 100, 0.5);
+    background-color: #ff5252;
+    opacity: 0.8;
   }
 }
 
@@ -30,11 +33,11 @@
 
 .header__nav__list {
   width: 60vw;
-  margin-top: 2vh;
+  max-width: 1000px;
+  padding-right: 5vh;
   display: flex;
   justify-content: space-around;
   font-weight: bold;
-  overflow: hidden;
   &-el {
     .link {
       position: relative;
@@ -48,15 +51,19 @@
         position: absolute;
         left: 0;
         right: 100%;
-        bottom: 0;
+        bottom: 5px;
         height: 3px;
         background-color: $nav-el;
-        transition: 0.3s;
+        transition: 0.4s;
       }
     }
   }
   @media (max-width: 1024px) {
     display: none;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 1.6em;
   }
 }
 
@@ -99,8 +106,48 @@
   }
 }
 
+.header__description {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 20%;
+  transform: translateY(-50%);
+  &-header {
+    padding-bottom: 3vh;
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 130%;
+    color: #111;
+    @media (min-width: 1024px) {
+      font-size: 2.6em;
+      line-height: 110%;
+    }
+    @media (min-width: 1440px) {
+      font-size: 4em;
+    }
+  }
+
+  &-desc {
+    font-size: 1.5em;
+    @media (min-width: 1024px) {
+      font-size: 1.8em;
+    }
+    @media (min-width: 1440px) {
+      font-size: 2.8em;
+    }
+  }
+}
+
 .header-moreProjects {
   position: absolute !important;
-  right: 5vw;
+  right: 0vw;
   bottom: 5vh;
+  opacity: 0;
+  animation: showSliderButton 1.2s 1.2s ease-out both;
+  @keyframes showSliderButton {
+    100% {
+      right: 5vw;
+      opacity: 1;
+    }
+  }
 }

@@ -4,6 +4,13 @@
 @import "partials/components/_loader.scss";
 @import "partials/components/_header.scss";
 @import "partials/components/mobileMenu";
+@import "partials/components/about";
+@import "partials/components/proba";
+
+html,
+body {
+  overflow: hidden;
+}
 
 .wrap {
   position: relative;

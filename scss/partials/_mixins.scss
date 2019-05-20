@@ -1,5 +1,7 @@
+@import "./variables";
+
 @mixin sliderBackgroundImage() {
-  height: 90vh;
+  height: $header-height;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
