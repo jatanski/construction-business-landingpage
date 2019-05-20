@@ -713,7 +713,7 @@ module.exports = function (css) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "917083b310463cc850f994153d990840.jpg";
+module.exports = __webpack_require__.p + "foto1.jpg";
 
 /***/ }),
 
@@ -724,7 +724,7 @@ module.exports = __webpack_require__.p + "917083b310463cc850f994153d990840.jpg";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "848df160d6d2e9467baf91b333fef5bc.jpg";
+module.exports = __webpack_require__.p + "foto2.jpg";
 
 /***/ }),
 
@@ -735,7 +735,7 @@ module.exports = __webpack_require__.p + "848df160d6d2e9467baf91b333fef5bc.jpg";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "81e86b799c577072a41640ae757dac87.jpg";
+module.exports = __webpack_require__.p + "foto3.jpg";
 
 /***/ }),
 
@@ -746,7 +746,7 @@ module.exports = __webpack_require__.p + "81e86b799c577072a41640ae757dac87.jpg";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "d51cc9fcd0ce8aeadba918a6b782eabc.jpg";
+module.exports = __webpack_require__.p + "foto4.jpg";
 
 /***/ }),
 
@@ -809,16 +809,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-console.log(_public_img_foto1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a);
-var slider = document.querySelector(".header__slider"); // slider.firstElementChild.style.backgroundImage = `url(dist/img/${photo1})`;
-
-console.log(slider.children);
-
-for (var i = 0; i < slider.children; i++) {
-  slider.children[i].style.backgroundImage = "url(".concat(photo[i], ")");
-}
-
-console.log(slider.children);
+var slider = document.querySelector(".header__slider");
+slider.children[0].style.backgroundImage = "url(dist/".concat(_public_img_foto1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a, ")");
+slider.children[1].style.backgroundImage = "url(dist/".concat(_public_img_foto2_jpg__WEBPACK_IMPORTED_MODULE_2___default.a, ")");
+slider.children[2].style.backgroundImage = "url(dist/".concat(_public_img_foto3_jpg__WEBPACK_IMPORTED_MODULE_3___default.a, ")");
+slider.children[3].style.backgroundImage = "url(dist/".concat(_public_img_foto4_jpg__WEBPACK_IMPORTED_MODULE_4___default.a, ")");
 
 /***/ }),
 

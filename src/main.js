@@ -6,14 +6,9 @@ import photo4 from "../public/img/foto4.jpg";
 import "./slider";
 import "./mobileMenu";
 
-console.log(photo1);
-
 const slider = document.querySelector(".header__slider");
 
-// slider.firstElementChild.style.backgroundImage = `url(dist/img/${photo1})`;
-
-console.log(slider.children);
-for (let i = 0; i < slider.children; i++) {
-  slider.children[i].style.backgroundImage = `url(${photo[i]})`;
-}
-console.log(slider.children);
+slider.children[0].style.backgroundImage = `url(dist/${photo1})`;
+slider.children[1].style.backgroundImage = `url(dist/${photo2})`;
+slider.children[2].style.backgroundImage = `url(dist/${photo3})`;
+slider.children[3].style.backgroundImage = `url(dist/${photo4})`;
