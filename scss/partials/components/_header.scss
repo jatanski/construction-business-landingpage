@@ -8,7 +8,7 @@
 }
 
 .header__nav {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   display: flex;
@@ -79,33 +79,26 @@
   }
 }
 
-// $photos: (1, "foto1.jpg"), (2, "foto2.jpg"), (3, "foto3.jpg"), (4, "foto4.jpg");
-
-// @each $number, $photo in $photos {
-//   .header__slider-photo#{$number} {
-//     height: 80vh;
-//     background-image: url("/public/img#/{$photo}");
-//   }
-// }
-
-.header__slider {
-  &-photo1 {
+@for $i from 1 through 4 {
+  .header__slider-photo#{$i} {
     @include sliderBackgroundImage();
-    background-image: url(/public/img/foto1.jpg);
-  }
-  &-photo2 {
-    @include sliderBackgroundImage();
-    background-image: url(/public/img/foto2.jpg);
-  }
-  &-photo3 {
-    @include sliderBackgroundImage();
-    background-image: url(/public/img/foto3.jpg);
-  }
-  &-photo4 {
-    @include sliderBackgroundImage();
-    background-image: url(/public/img/foto4.jpg);
   }
 }
+
+// .header__slider {
+//   &-photo1 {
+//     @include sliderBackgroundImage();
+//   }
+//   &-photo2 {
+//     @include sliderBackgroundImage();
+//   }
+//   &-photo3 {
+//     @include sliderBackgroundImage();
+//   }
+//   &-photo4 {
+//     @include sliderBackgroundImage();
+//   }
+// }
 
 .header__description {
   position: absolute;
