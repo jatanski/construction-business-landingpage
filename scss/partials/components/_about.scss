@@ -1,3 +1,10 @@
 .about {
-  min-height: 200vh;
+  min-height: 100vh;
+  display: flex;
+  &__text {
+    width: 50%;
+  }
+  &__imageContainter {
+    width: 50%;
+  }
 }
