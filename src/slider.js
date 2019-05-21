@@ -13,7 +13,7 @@ export default $(document).ready(function() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
-    speed: 700,
+    speed: 1000,
     responsive: [
       {
         breakpoint: 1024,

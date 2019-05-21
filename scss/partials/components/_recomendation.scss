@@ -1,7 +1,7 @@
 @import "../variables";
 
 .recomendation {
-  min-height: 80vh;
+  //   min-height: 80vh;
   background-color: $recomendation-background;
   &-imgQoute {
     position: relative;
@@ -12,13 +12,19 @@
       transform: translate(-50%, -50%);
     }
     @media (min-width: 1024px) {
-      left: 28%;
-      transform: translate(-10%, -50%);
-      width: 60%;
+      left: 25%;
+      width: 50%;
+    }
+    @media (min-width: 1440px) {
+      left: 30%;
+      width: 40%;
     }
   }
   &__slider {
     padding-top: 15vh;
+    @media (min-width: 1024px) {
+      padding-top: 10vh;
+    }
     &__opinion {
       @media (min-width: 1024px) {
         display: flex !important;
@@ -29,15 +35,15 @@
         justify-content: center;
         @media (min-width: 1024px) {
           padding-top: 4vw;
-          width: 50%;
+          width: 30%;
         }
         & img {
-          width: 40%;
-          height: 40%;
+          width: 30%;
+          height: 30%;
           border-radius: 50%;
           @media (min-width: 1024px) {
-            width: 50%;
-            height: 50%;
+            width: 10vw;
+            height: 10vw;
           }
         }
       }
@@ -52,8 +58,11 @@
         }
         @media (min-width: 1024px) {
           padding: 5vh 2vw 5vh 0;
-          width: 50%;
-          font-size: 1em;
+          width: 70%;
+          font-size: 0.9em;
+        }
+        @media (min-width: 1440px) {
+          font-size: 1.1em;
         }
         &-opinion {
           &-footer {
