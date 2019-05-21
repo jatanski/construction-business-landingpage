@@ -1,1 +1,1 @@
-export const lightbox = $(".gallery a").simpleLightbox();
+export const lightbox = $(".projects__gallery-photo").simpleLightbox();
