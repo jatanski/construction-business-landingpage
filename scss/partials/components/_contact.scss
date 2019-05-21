@@ -1,0 +1,26 @@
+@import "../variables";
+
+.contact__header {
+  position: relative;
+  min-height: 40vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &-title {
+    color: #eee;
+    position: absolute;
+    z-index: 2;
+  }
+  &::after {
+    position: absolute;
+    min-height: 40vh;
+    width: 100%;
+    content: "";
+    background-color: rgba(37, 39, 62, 0.9);
+    z-index: 1;
+  }
+}
+
+.contact__containter {
+  display: flex;
+}
