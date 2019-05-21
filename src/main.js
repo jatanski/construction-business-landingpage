@@ -9,10 +9,10 @@ import "./mobileMenu";
 
 const slider = document.querySelector(".header__slider");
 
-// slider.children[0].style.backgroundImage = `url(dist/${photo1})`;
-// slider.children[1].style.backgroundImage = `url(dist/${photo2})`;
-// slider.children[2].style.backgroundImage = `url(dist/${photo3})`;
-// slider.children[3].style.backgroundImage = `url(dist/${photo4})`;
+slider.children[0].style.backgroundImage = `url(dist/${photo1})`;
+slider.children[1].style.backgroundImage = `url(dist/${photo2})`;
+slider.children[2].style.backgroundImage = `url(dist/${photo3})`;
+slider.children[3].style.backgroundImage = `url(dist/${photo4})`;
 
 const aboutImage = document.querySelector(".about__imageContainter-image");
 

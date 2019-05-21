@@ -10,18 +10,18 @@
     &-span {
       display: block;
       margin-bottom: 10px;
-      font-size: 0.9em;
+      font-size: $about-fontSize;
     }
     &-header {
       margin-bottom: 30px;
       line-height: 120%;
-      font-size: 1.8em;
+      font-size: 2 * $about-fontSize;
     }
     &-description {
       padding: 0 15px 0 30px;
       margin-bottom: 30px;
       line-height: 130%;
-      font-size: 1em;
+      font-size: $about-fontSize;
       letter-spacing: 1px;
     }
     &-buttonMore {
@@ -32,16 +32,32 @@
       width: 100%;
       background: rgba(100, 100, 100, 0);
       border: 1px solid black;
+      font-size: $about-fontSize;
+      transition: 0.2s;
       &:hover {
         color: aliceblue;
         background: #000;
       }
     }
+    @media (min-width: 768px) {
+      &-span {
+        font-size: 1.9 * $about-fontSize;
+      }
+      &-header {
+        font-size: 3.8 * $about-fontSize;
+      }
+      &-description {
+        font-size: 1.8 * $about-fontSize;
+      }
+      &-buttonMore {
+        font-size: 1.8 * $about-fontSize;
+      }
+    }
   }
   &__imageContainter {
     min-width: 50vh;
+    min-height: 80vh;
     margin-top: 7vh;
-    // position: relative;
     &-image {
       margin-top: 8vh;
       position: absolute;
@@ -55,26 +71,125 @@
       display: block;
       position: absolute;
       right: 0;
-      width: 90vw;
+      width: 90%;
       height: 35vh;
       background-color: $color-main;
     }
     &-slogan {
       position: absolute;
-      bottom: -60%;
+      bottom: 3%;
       right: 0;
       width: 70%;
       line-height: 200%;
       letter-spacing: 1px;
-      font-size: 1.3em;
+      font-size: 1.45 * $about-fontSize;
       &::after {
         content: "";
-        width: 120px;
+        width: 32vw;
         height: 1px;
         position: absolute;
         left: -50%;
         background-color: $color-main;
       }
+    }
+    @media (min-width: 768px) {
+      &-slogan {
+        font-size: 2.75 * $about-fontSize;
+        &::after {
+          width: 32vw;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .about {
+    flex-direction: row;
+    &__text {
+      width: 45%;
+      &-span {
+        font-size: 1.6 * $about-fontSize;
+      }
+      &-header {
+        font-size: 2.8 * $about-fontSize;
+      }
+      &-description {
+        font-size: 1.5 * $about-fontSize;
+      }
+      &-buttonMore {
+        font-size: 1.5 * $about-fontSize;
+      }
+    }
+    &__imageContainter {
+      width: 50%;
+      &-image {
+        height: 65vh;
+        background-position: right;
+        width: 40%;
+      }
+      &-span {
+        height: 55vh;
+        width: 50%;
+      }
+      &-slogan {
+        width: 40%;
+        left: 60%;
+        bottom: 3%;
+        font-size: 2.4 * $about-fontSize;
+
+        &::after {
+          bottom: 49%;
+          width: 65vw;
+          left: -150%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .about {
+    &__text {
+      padding-left: 50px;
+      width: 38%;
+      &-span {
+        font-size: 1.8 * $about-fontSize;
+      }
+      &-header {
+        font-size: 3.2 * $about-fontSize;
+      }
+      &-description {
+        font-size: 1.7 * $about-fontSize;
+      }
+      &-buttonMore {
+        font-size: 1.7 * $about-fontSize;
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .about {
+    &__text {
+      padding-left: 70px;
+      width: 37%;
+      &-span {
+        font-size: 2 * $about-fontSize;
+      }
+      &-header {
+        font-size: 3.6 * $about-fontSize;
+      }
+      &-description {
+        font-size: 1.8 * $about-fontSize;
+      }
+      &-buttonMore {
+        font-size: 1.8 * $about-fontSize;
+      }
+    }
+    &__imageContainter-slogan {
+      bottom: -3%;
+      font-size: 3 * $about-fontSize;
     }
   }
 }
