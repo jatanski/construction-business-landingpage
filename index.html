@@ -19,6 +19,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
     />
+    <link
+      href="./lib/simplelightbox/simplelightbox.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
     <link rel="stylesheet" type="text/css" href="./lib/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="./lib/slick/slick-theme.css" />
   </head>
@@ -30,7 +36,7 @@
           <h1 class="loader__header-text">Pozwól sobie na wymarzony dom.</h1>
         </div>
       </section> -->
-      <header class="header">
+      <!-- <header class="header">
         <nav class="header__nav">
           <div class="header__nav-logo">Idealnyremont.pl (Tutaj logo)</div>
           <ul class="header__nav__list">
@@ -90,8 +96,8 @@
           <div class="visible content">Więcej projektów</div>
           <div class="hidden content">Zobacz</div>
         </button>
-      </header>
-      <section class="about">
+      </header> -->
+      <!-- <section class="about">
         <div class="about__text">
           <span class="about__text-span">O nas</span>
           <h2 class="about__text-header">
@@ -114,10 +120,32 @@
             I mamy bardzo ładną stronę internetową.
           </h3>
         </div>
-      </section>
+      </section> -->
       <section class="projects">
+        <h2 class="projects-header">
+          Zobacz jakie mieszkanka już odkurwiliśmy!
+        </h2>
         <div class="projects__bestProjects"></div>
-        <div class="projects-moreProjectsButton"></div>
+        <div class="projects__bestProjects-gallery gallery">
+          <a class="projects-gallery-photo" href="public/img/foto1.jpg"
+            ><img
+              src="public/img/foto1-small.jpg"
+              alt="Remont u Wieśka"
+              title="Remont u Wieśka. Cena 1000K GOLD"
+          /></a>
+          <a class="projects-gallery-photo" href="public/img/foto2.jpg"
+            ><img src="public/img/foto2-small.jpg" alt="" title="Fuszerka u Haliny. Ale i tak wzieliśmy w chuj."
+          /></a>
+          <a class="projects-gallery-photo" href="public/img/foto3.jpg"
+            ><img src="public/img/foto3-small.jpg" alt="" title="Nigdy nie kładziemy na krzyżyki. Chyba widać."
+          /></a>
+          <a class="projects-gallery-photo" href="public/img/foto4.jpg"
+            ><img src="public/img/foto4-small.jpg" alt="" title="A to nawet nie wiem skąd się wzięło, pewnie byłem najebany całą robote."
+          /></a>
+        </div>
+        <button class="projects-moreProjectsButton">
+          Zobacz więcej projektów
+        </button>
       </section>
       <!-- <section class="prices"></section> -->
       <section class="recomendation">
@@ -134,6 +162,11 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script
+      type="text/javascript"
+      src="./lib/simplelightbox/simple-lightbox.js"
+    ></script>
+
     <!-- <script src="semantic/dist/semantic.min.js"></script> -->
     <script src="./dist/index.js"></script>
   </body>

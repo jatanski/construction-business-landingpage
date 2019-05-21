@@ -1,0 +1,12 @@
+@import "../variables";
+
+.projects {
+  padding: 70px 10px 80px;
+  &-header {
+    font-size: $projects-fontSize;
+    text-align: center;
+    line-height: 130%;
+    color: $projects-mainColor;
+    font-weight: bold;
+  }
+}

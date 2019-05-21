@@ -5,6 +5,7 @@
 @import "partials/components/_header.scss";
 @import "partials/components/mobileMenu";
 @import "partials/components/about";
+@import "partials/components/projects";
 @import "partials/components/proba";
 
 html,
@@ -15,5 +16,9 @@ body {
 
 .wrap {
   position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+div {
   font-family: "Montserrat", sans-serif;
 }
