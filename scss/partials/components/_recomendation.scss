@@ -1,0 +1,72 @@
+@import "../variables";
+
+.recomendation {
+  min-height: 80vh;
+  background-color: $recomendation-background;
+  &-imgQoute {
+    position: relative;
+    & img {
+      width: 25%;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    @media (min-width: 1024px) {
+      left: 28%;
+      transform: translate(-10%, -50%);
+      width: 60%;
+    }
+  }
+  &__slider {
+    padding-top: 15vh;
+    &__opinion {
+      @media (min-width: 1024px) {
+        display: flex !important;
+      }
+      &-photo {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        @media (min-width: 1024px) {
+          padding-top: 4vw;
+          width: 50%;
+        }
+        & img {
+          width: 40%;
+          height: 40%;
+          border-radius: 50%;
+          @media (min-width: 1024px) {
+            width: 50%;
+            height: 50%;
+          }
+        }
+      }
+      &-description {
+        padding: 5vh 5vw;
+        font-style: italic;
+        text-align: center;
+        line-height: 130%;
+        letter-spacing: 1px;
+        @media (min-width: 768px) {
+          font-size: 1.7em;
+        }
+        @media (min-width: 1024px) {
+          padding: 5vh 2vw 5vh 0;
+          width: 50%;
+          font-size: 1em;
+        }
+        &-opinion {
+          &-footer {
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            font-weight: bold;
+            & span {
+              padding-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

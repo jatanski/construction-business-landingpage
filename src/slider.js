@@ -8,4 +8,25 @@ export default $(document).ready(function() {
     speed: 1000,
     cssEase: "linear"
   });
+  $(".recomendation__slider").slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    speed: 700,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
 });
