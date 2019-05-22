@@ -8,7 +8,7 @@ import contactBackground from "../public/img/contact-background.jpg";
 import lublinMap from "../public/img/lublin-map.jpg";
 import "./slider";
 import "./mobileMenu";
-// import { lightbox } from "./lightbox";
+import lightbox from "./lightbox";
 
 const slider = document.querySelector(".header__slider");
 

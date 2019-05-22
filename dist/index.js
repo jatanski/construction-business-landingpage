@@ -813,6 +813,19 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./src/lightbox.js":
+/*!*************************!*\
+  !*** ./src/lightbox.js ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ($(".projects__gallery-photo").simpleLightbox());
+
+/***/ }),
+
 /***/ "./src/main.js":
 /*!*********************!*\
   !*** ./src/main.js ***!
@@ -841,6 +854,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _slider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./slider */ "./src/slider.js");
 /* harmony import */ var _mobileMenu__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./mobileMenu */ "./src/mobileMenu.js");
 /* harmony import */ var _mobileMenu__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_mobileMenu__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _lightbox__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./lightbox */ "./src/lightbox.js");
 
 
 
@@ -850,7 +864,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // import { lightbox } from "./lightbox";
+
 
 var slider = document.querySelector(".header__slider");
 slider.children[0].style.backgroundImage = "url(dist/".concat(_public_img_foto1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a, ")");
