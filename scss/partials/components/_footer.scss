@@ -1,0 +1,48 @@
+@import "../variables";
+@import "partials/_mixins.scss";
+
+.footer {
+  position: relative;
+  display: flex;
+  padding: 3.5vh 0;
+  background-color: $footer-bgc;
+  color: #fff;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    min-height: 20vh;
+  }
+  &-copyright {
+    @include centerWithPosition();
+    font-size: 1.2em;
+    @media (max-width: 767px) {
+      top: 75%;
+      font-size: 0.9em;
+      text-align: center;
+      line-height: 120%;
+    }
+  }
+  &__socials {
+    margin-left: 3vw;
+    display: flex;
+    @media (max-width: 767px) {
+      @include centerWithPosition();
+      top: 25%;
+    }
+    &-el {
+      @include iconSquare();
+      margin-left: 10px;
+      border: 2px solid #fff;
+      background-color: #fff;
+      color: $footer-bgc;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.2s;
+      &:hover {
+        transform: scale(1.2);
+      }
+      & .fab {
+        @include centerWithPosition();
+      }
+    }
+  }
+}
