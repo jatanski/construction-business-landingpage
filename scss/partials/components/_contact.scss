@@ -1,5 +1,9 @@
 @import "../variables";
 
+.contact {
+  position: relative;
+}
+
 .contact__header {
   position: relative;
   min-height: 40vh;
@@ -22,5 +26,12 @@
 }
 
 .contact__containter {
+  background-color: #fff;
+  position: absolute;
   display: flex;
+}
+
+.contact-map {
+  background-position: center;
+  min-height: 50vh;
 }
