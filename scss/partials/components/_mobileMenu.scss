@@ -31,13 +31,13 @@
   }
 
   span {
-    background: $color-main;
-    border: none;
     height: 5px;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    background: $color-main;
+    border: none;
     transition: all 0.35s ease;
     cursor: pointer;
 
@@ -59,6 +59,7 @@
   width: 100%;
   height: 0%;
   opacity: 0;
+  border-bottom: 2px solid darken($color-main, 20%);
   visibility: hidden;
   transition: opacity 0.35s, visibility 0.35s, height 0.35s;
   overflow: hidden;
@@ -67,7 +68,7 @@
   &.open {
     opacity: 0.9;
     visibility: visible;
-    height: 70%;
+    height: 60%;
 
     li {
       animation: fadeInRight 0.5s ease forwards;
@@ -88,11 +89,11 @@
     }
   }
   &-nav {
+    height: 60%;
     position: relative;
-    height: 70%;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 2.5em;
+    font-size: 1.8em;
     font-family: $loader-fontFamily;
     font-weight: 400;
     text-align: center;
