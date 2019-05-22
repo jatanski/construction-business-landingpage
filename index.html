@@ -261,17 +261,32 @@
             <h3 class="contact__containter__companyDate-header">
               Idealny-Remont Agencja Marketingowa
             </h3>
-            <p class="contact__containter__companyDate-adress">
-              Klemensa Junoszy 20/21
-              <br />
-              Lublin 20-400
-            </p>
-            <p class="contact__containter__companyDate-telephone">
-              +48 0 700 880 123
-            </p>
-            <p class="contact__containter__companyDate-mail">
-              kontakt@idealny-remont.pl
-            </p>
+            <div class="contact__containter__companyDate-adress">
+              <div class="iconContainer">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <p>
+                Klemensa Junoszy 14/23
+                <br />
+                Lublin 20-400
+              </p>
+            </div>
+            <div class="contact__containter__companyDate-telephone">
+              <div class="iconContainer">
+                <i class="fas fa-phone"></i>
+              </div>
+              <p>
+                +48 0 700 880 123
+              </p>
+            </div>
+            <div class="contact__containter__companyDate-mail">
+              <div class="iconContainer">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <p>
+                kontakt@idealny-remont.pl
+              </p>
+            </div>
           </div>
           <div class="contact__containter__formContainer">
             <h3 class="contact__containter__formContainer-title">
@@ -279,23 +294,54 @@
               do Ciebie.
             </h3>
             <form class="contact__form" action="">
-              <input type="text" class="contact__form-name" />
-              <input type="text" class="contact__form-mail" />
-              <input type="text" class="contact__form-telephone" />
+              <input
+                type="text"
+                id="name"
+                class="contact__form-input name"
+                placeholder="Imię*"
+              />
+              <input
+                type="text"
+                id="mail"
+                class="contact__form-input mail"
+                placeholder="E-mail"
+              />
+              <input
+                type="number"
+                id="telephone"
+                class="contact__form-input telephone"
+                placeholder="Numer telefonu"
+              />
               <textarea
                 name=""
                 id=""
-                cols="30"
-                rows="10"
-                class="contact__form-message"
+                cols="20"
+                rows="4"
+                class="contact__form-input message"
+                placeholder="Wiadomość"
               ></textarea>
-              <button class="contact__form-button">Wyślij wiadomość</button>
+
+              <button class="contact__form-button">
+                Wyślij wiadomość
+              </button>
             </form>
           </div>
         </div>
         <div class="contact-map"></div>
       </section>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__socials">
+          <div class="footer__socials-fb">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          <div class="footer__socials-insta">
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div class="footer__socials-linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script
