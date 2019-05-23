@@ -17,7 +17,7 @@
   align-items: center;
   z-index: 4;
   @media (min-width: 1024px) {
-    border-bottom: 1px solid #ed1d4f;
+    border-bottom: 2px solid rgba(37, 39, 62, 1);
     background-color: $menu-background;
   }
 }
