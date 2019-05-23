@@ -1,0 +1,117 @@
+@import "../_variables.scss";
+@import "../mixins";
+
+.services__wrap {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $services-fontFamily;
+}
+
+.services {
+  min-height: 75vh;
+  &-title {
+    @include rightSectionHeader();
+  }
+  &__container {
+    position: relative;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0 40px;
+    &__room {
+      position: relative;
+      height: 400px;
+      background-color: $services-box-background;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #000;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        // background-color: #fff;
+        transform: skew(2deg, 2deg);
+        z-index: -1;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.05);
+        pointer-events: none;
+      }
+      &__content {
+        position: relative;
+        padding: 20px;
+        transform: translateY(40px);
+        & .h4 {
+          position: absolute;
+          font-size: 3em;
+          top: 100px;
+          right: 20px;
+          color: rgba(255, 255, 255, 0.1);
+          transition: 0.5s;
+        }
+        &-header {
+          margin: 0 0 15px;
+          font-size: 30px;
+          color: #fff;
+        }
+        & li {
+          padding-top: 10px;
+          color: #fff;
+          font-size: 16px;
+          & .fas {
+            padding-right: 10px;
+          }
+        }
+        & button {
+          position: relative;
+          margin: 20px 0 0;
+          padding: 10px 20px;
+          border: 1px solid white;
+          color: #fff;
+          transition: 0.5s;
+          transform: translateY(40px);
+          opacity: 0;
+          visibility: hidden;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.services__container__room:hover {
+  & .h4 {
+    top: -50px;
+  }
+  & button {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.one::before {
+  background: linear-gradient(315deg, #ff0057, #e64a19);
+}
+.two::before {
+  background: linear-gradient(315deg, #89ff00, #00bcd4);
+}
+.three::before {
+  background: linear-gradient(315deg, #e91e63, #5d02ff);
+}
+.four::before {
+  background: linear-gradient(315deg, #ff0000, #ffc107);
+}
