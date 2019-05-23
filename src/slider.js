@@ -8,6 +8,7 @@ export default $(document).ready(function() {
     speed: 1000,
     cssEase: "linear"
   });
+
   $(".recomendation__slider").slick({
     slidesToShow: 2,
     slidesToScroll: 1,

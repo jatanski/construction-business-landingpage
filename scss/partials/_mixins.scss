@@ -1,5 +1,19 @@
 @import "./variables";
 
+@mixin imageInBackground() {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin colorAboveImage() {
+  position: absolute;
+  width: 100%;
+  content: "";
+  background-color: rgba(37, 39, 62, 0.95);
+  z-index: 1;
+}
+
 @mixin sliderBackgroundImage() {
   height: $header-height;
   background-repeat: no-repeat;

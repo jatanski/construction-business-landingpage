@@ -2,19 +2,30 @@
 
 .projects {
   min-height: 80vh;
+  position: relative;
   margin-top: 8vh;
   padding: 50px 10px 220px;
-  background-color: darken($projects-mainColor, 5%);
+  background-color: rgba(37, 39, 62, 0.9);
+  @include imageInBackground();
   display: flex;
   flex-direction: column;
   justify-content: center;
+  &::after {
+    height: 100%;
+    top: 0;
+    left: 0;
+    @include colorAboveImage();
+  }
   &-header {
     padding-bottom: 50px;
     line-height: 130%;
+    color: $projects-fontColor;
+    font-family: $projects-fontFamily;
+    letter-spacing: 3px;
     text-align: center;
-    color: #111;
     font-weight: bold;
     font-size: $projects-fontSize;
+    z-index: 2;
     @media (min-width: 768px) {
       font-size: 1.6 * $projects-fontSize;
     }
@@ -28,12 +39,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 2;
     &-photo {
       display: inline-block;
       margin: 20px auto;
       transition: 0.3s;
       @media (min-width: 1024px) {
-        // width: 100%;
         margin: 2vh 4vw;
       }
       &:hover {
@@ -58,10 +69,11 @@
     }
   }
   &-moreProjectsButton {
+    width: 60%;
     position: relative;
     left: 50%;
     transform: translate(-50%);
-    width: 60%;
+    z-index: 2 !important;
     @media (min-width: 768px) {
       font-size: $projects-fontSize !important;
     }

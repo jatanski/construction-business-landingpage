@@ -4,6 +4,7 @@ import photo2 from "../public/img/foto2.jpg";
 import photo3 from "../public/img/foto3.jpg";
 import photo4 from "../public/img/foto4.jpg";
 import photoAbout from "../public/img/foto-about.jpg";
+import projectsBackground from "../public/img/projects-background.jpg";
 import contactBackground from "../public/img/contact-background.jpg";
 import lublinMap from "../public/img/lublin-map.jpg";
 import "./slider";
@@ -23,6 +24,10 @@ slider.children[3].style.backgroundImage = `url(dist/${photo4})`;
 const aboutImage = document.querySelector(".about__imageContainter-image");
 aboutImage.style.backgroundImage = `url(dist/${photoAbout})`;
 
+// Add backgroundImage in projects section
+const projectsSection = document.querySelector(".projects");
+projectsSection.style.backgroundImage = `url(dist/${projectsBackground})`;
+
 // Add backgroundImage in contact section
 const contactHeader = document.querySelector(".contact__header");
 contactHeader.style.backgroundImage = `url(dist/${contactBackground})`;
@@ -41,15 +46,31 @@ const showPage = () => {
 };
 setTimeout(showPage, 1000);
 
-//Function animation underline in desktop menu elements.
-// const animationUnderline = el => {
-//     el
-// };
+//Plugin to animate show a section
+AOS.init();
 
-// const menuElements = document.querySelectorAll(".link::after");
-// console.log(menuElements);
-// menuElements.forEach(el => )
+// Close mobile menu after come to section
+const mobileElements = document.querySelectorAll(".mobileLink");
+const mobileMenu = document.querySelector(".header__mobileContainer__menu");
+const mobileIco = document.querySelector(".header__mobileMenuButtonContainer");
 
-// AnimateAbout();
+mobileElements.forEach(el => {
+  el.addEventListener("click", () => {
+    mobileMenu.classList.remove("open");
+    mobileIco.classList.remove("active");
+  });
+});
 
-AOS.init({ duration: 2000 });
+// Scroll to chosen section
+$('a[href^="#"]').on("click", function(e) {
+  e.preventDefault();
+  let target = $(this.hash);
+
+  $("html, body").animate(
+    {
+      scrollTop: target.offset().top - $(".header__nav").outerHeight()
+    },
+    1000,
+    "swing"
+  );
+});

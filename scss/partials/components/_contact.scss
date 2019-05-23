@@ -36,12 +36,8 @@
     }
   }
   &::after {
-    position: absolute;
     min-height: 40vh;
-    width: 100%;
-    content: "";
-    background-color: rgba(37, 39, 62, 0.95);
-    z-index: 1;
+    @include colorAboveImage();
     @media (max-width: 767px) {
       min-height: 20vh;
     }
