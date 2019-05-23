@@ -17,6 +17,7 @@
   align-items: center;
   z-index: 4;
   @media (min-width: 1024px) {
+    border-bottom: 1px solid #ed1d4f;
     background-color: $menu-background;
   }
 }
@@ -27,7 +28,7 @@
   max-width: 500px;
   position: relative;
   left: -10%;
-  background-color: rgba(255, 0, 119, 0.5);
+  background-color: rgba(237, 29, 79, 0.5);
   opacity: 0;
   animation: showNavEl 1.2s $showHeaderDelay ease-out both;
 }

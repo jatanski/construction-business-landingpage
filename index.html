@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta name="theme-color" content="rgb(37, 39, 62)">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Development name</title>
+    <title>Idealny-Remont</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -21,6 +22,10 @@
     />
     <link
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin-ext"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
     />
     <link
@@ -34,7 +39,7 @@
   </head>
 
   <body>
-    <div class="wrap">
+    <div class="wrap" onselectstart="window.event.returnValue=false;">
       <!-- <section class="loader">
         <div class="loader__header">
           <h1 class="loader__header-text">Pozwól sobie na wymarzony dom.</h1>
@@ -93,13 +98,15 @@
             Postaw na fachowców z doświadczeniem.
           </p>
         </div>
-        <button
-          class="header-moreProjects ui black animated button"
-          tabindex="0"
-        >
-          <div class="visible content">Więcej projektów</div>
-          <div class="hidden content">Zobacz</div>
-        </button>
+        <a href="#projects">
+          <button
+            class="header-moreProjects ui black animated button"
+            tabindex="0"
+          >
+            <div class="visible content">Więcej projektów</div>
+            <div class="hidden content">Zobacz</div>
+          </button>
+        </a>
       </header>
       <div class="mainContainer">
         <section id="about" class="about">
@@ -141,7 +148,7 @@
         </section>
         <section id="projects" class="projects">
           <h2 class="projects-header">
-            Zobacz jakie mieszkanka już odkurwiliśmy!
+            Zrealizowane projekty
           </h2>
           <div class="projects__gallery">
             <a class="projects__gallery-photo" href="public/img/foto1.jpg"
@@ -149,25 +156,115 @@
                 src="public/img/foto1-small.jpg"
                 alt="Remont u Wieśka"
                 title="Remont u Wieśka. Cena 1000K GOLD"
-            /></a>
+                class="projects__gallery-photo-img"
+              />
+              <div class="projects__gallery-photo-desc">
+                <ul>
+                  <span>Zakres wykonanych robót:</span>
+                  <li><i class="fas fa-tools"></i></i>gładzie siateczką</li>
+                  <li><i class="fas fa-hammer"></i></i>terakota</li>
+                  <li><i class="fas fa-toolbox"></i></i>kafle</li>
+                  <li><i class="fas fa-screwdriver"></i>lastryko</li>
+                </ul>
+                <br />
+                <span>Cena: 500 czeskich koron</span>
+              </div>
+            </a>
             <a class="projects__gallery-photo" href="public/img/foto2.jpg"
               ><img
                 src="public/img/foto2-small.jpg"
                 alt="Fuszerka u Haliny."
                 title="Fuszerka u Haliny. Ale i tak wzieliśmy w chuj."
-            /></a>
+                class="projects__gallery-photo-img"
+              />
+              <div class="projects__gallery-photo-desc">
+                <ul>
+                  <span>Zakres wykonanych robót:</span>
+                   <li><i class="fas fa-tools"></i></i>gładzie siateczką</li>
+                  <li><i class="fas fa-hammer"></i></i>terakota</li>
+                  <li><i class="fas fa-toolbox"></i></i>kafle</li>
+                  <li><i class="fas fa-screwdriver"></i>lastryko</li>
+                </ul>
+                <br />
+                <span>Cena: 500 czeskich koron</span>
+              </div>
+            </a>
             <a class="projects__gallery-photo" href="public/img/foto3.jpg"
               ><img
                 src="public/img/foto3-small.jpg"
                 alt="Nigdy nie kładziemy na krzyżaczki."
                 title="Nigdy nie kładziemy na krzyżaczki. Chyba widać."
-            /></a>
+                class="projects__gallery-photo-img"
+              />
+              <div class="projects__gallery-photo-desc">
+                <ul>
+                  <span>Zakres wykonanych robót:</span>
+                 <li><i class="fas fa-tools"></i></i>gładzie siateczką</li>
+                  <li><i class="fas fa-hammer"></i></i>terakota</li>
+                  <li><i class="fas fa-toolbox"></i></i>kafle</li>
+                  <li><i class="fas fa-screwdriver"></i>lastryko</li>
+                </ul>
+                <br />
+                <span>Cena: 500 czeskich koron</span>
+              </div>
+            </a>
             <a class="projects__gallery-photo" href="public/img/foto4.jpg"
               ><img
                 src="public/img/foto4-small.jpg"
                 alt="Chuj wie co to jest."
                 title="A to nawet nie wiem skąd się wzięło, pewnie byłem najebany całą robote."
-            /></a>
+                class="projects__gallery-photo-img"
+              />
+              <div class="projects__gallery-photo-desc">
+                <ul>
+                  <span>Zakres wykonanych robót:</span>
+                <li><i class="fas fa-tools"></i></i>gładzie siateczką</li>
+                  <li><i class="fas fa-hammer"></i></i>terakota</li>
+                  <li><i class="fas fa-toolbox"></i></i>kafle</li>
+                  <li><i class="fas fa-screwdriver"></i>lastryko</li>
+                </ul>
+                <br />
+                <span>Cena: 500 czeskich koron</span>
+              </div>
+            </a>
+            <a class="projects__gallery-photo" href="public/img/foto4.jpg"
+              ><img
+                src="public/img/foto4-small.jpg"
+                alt="Chuj wie co to jest."
+                title="A to nawet nie wiem skąd się wzięło, pewnie byłem najebany całą robote."
+                class="projects__gallery-photo-img"
+              />
+              <div class="projects__gallery-photo-desc">
+                <ul>
+                  <span>Zakres wykonanych robót:</span>
+                  <li><i class="fas fa-tools"></i></i>gładzie siateczką</li>
+                  <li><i class="fas fa-hammer"></i></i>terakota</li>
+                  <li><i class="fas fa-toolbox"></i></i>kafle</li>
+                  <li><i class="fas fa-screwdriver"></i>lastryko</li>
+                </ul>
+                <br />
+                <span>Cena: 500 czeskich koron</span>
+              </div>
+            </a>
+            <a class="projects__gallery-photo" href="public/img/foto4.jpg"
+              ><img
+                src="public/img/foto4-small.jpg"
+                alt="Chuj wie co to jest."
+                title="A to nawet nie wiem skąd się wzięło, pewnie byłem najebany całą robote."
+                class="projects__gallery-photo-img"
+              />
+              <div class="projects__gallery-photo-desc">
+                <ul>
+                  <span>Zakres wykonanych robót:</span>
+                  <li><i class="fas fa-tools"></i></i>gładzie siateczką</li>
+                  <li><i class="fas fa-hammer"></i></i>terakota</li>
+                  <li><i class="fas fa-toolbox"></i></i>kafle</li>
+                  <li><i class="fas fa-screwdriver"></i>lastryko</li>
+                </ul>
+                <br />
+                <span>Cena: 500 czeskich koron</span>
+              </div>
+            </a>
           </div>
           <button
             class="projects-moreProjectsButton ui black animated button"
@@ -178,10 +275,10 @@
           </button>
         </section>
         <section id="recomendation" class="recomendation">
-          <div class="recomendation-imgQoute">
-            <!-- <h2 class="recomendation-header">Wafle, które już nam zaufały.</h2> -->
-            <img src="./public/img/quotes.png" alt="Sekcja opinii" />
-          </div>
+          <h2 class="recomendation-header">Wafle, które już nam zaufały.</h2>
+          <!-- <div class="recomendation-icoQuote">
+              <i class="fas fa-quote-right"></i>
+          </div> -->
           <div class="recomendation__slider">
             <div class="recomendation__slider__opinion">
               <div class="recomendation__slider__opinion-photo">
@@ -280,16 +377,16 @@
                 >Główna siedziba</span
               >
               <h3 class="contact__containter__companyDate-header">
-                Idealny-Remont Agencja Marketingowa
+                Idealny-Remont Agencja Marketingowa 
               </h3>
               <div class="contact__containter__companyDate-adress">
                 <div class="iconContainer">
                   <i class="fas fa-map-marker-alt"></i>
                 </div>
                 <p>
-                  Klemensa Junoszy 14/23
+                  Bartosza Głowackiego 28/1
                   <br />
-                  Lublin 20-400
+                  Lublin 20-060
                 </p>
               </div>
               <div class="contact__containter__companyDate-telephone">
@@ -297,7 +394,7 @@
                   <i class="fas fa-phone"></i>
                 </div>
                 <p>
-                  +48 0 700 880 123
+                  +48 793 253 931
                 </p>
               </div>
               <div class="contact__containter__companyDate-mail">

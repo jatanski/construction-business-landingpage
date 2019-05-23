@@ -2,9 +2,10 @@
 
 .projects {
   min-height: 80vh;
+  width: 100vw;
   position: relative;
   margin-top: 8vh;
-  padding: 50px 10px 220px;
+  padding: 50px 0px 120px;
   background-color: rgba(37, 39, 62, 0.9);
   @include imageInBackground();
   display: flex;
@@ -18,19 +19,32 @@
   }
   &-header {
     padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 5px;
     line-height: 130%;
     color: $projects-fontColor;
     font-family: $projects-fontFamily;
     letter-spacing: 3px;
-    text-align: center;
+    text-align: left;
+    text-transform: uppercase;
     font-weight: bold;
+    font-style: italic;
     font-size: $projects-fontSize;
     z-index: 2;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 140px;
+      left: 50px;
+      height: 1px;
+      width: 100vw;
+      background-color: white;
+    }
     @media (min-width: 768px) {
       font-size: 1.6 * $projects-fontSize;
     }
     @media (min-width: 1024px) {
-      font-size: 1.9 * $projects-fontSize;
+      font-size: 1.8 * $projects-fontSize;
     }
   }
   &__gallery {
@@ -40,24 +54,57 @@
     flex-direction: column;
     justify-content: center;
     z-index: 2;
+    @media (min-width: 1024px) {
+      margin: 2vh 2vw;
+    }
     &-photo {
       display: inline-block;
       margin: 20px auto;
+      border: 1px solid black;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
       transition: 0.3s;
       @media (min-width: 1024px) {
-        margin: 2vh 4vw;
+        margin: 2vh 0vw;
       }
       &:hover {
         transform: scale(1.1);
+        opacity: 0.8;
       }
-      & img {
+      &-img {
         position: relative;
         left: 50%;
-        transform: translate(-50%);
-        width: 120%;
+        transform: translateX(-50%);
+        height: 37vh;
+        width: 80vw;
+        @media (min-width: 1024px) {
+          width: 30vw;
+          height: 25vh;
+        }
         @media (min-width: 1440px) {
-          width: 140%;
-          height: 32vh;
+          width: 22vw;
+          height: 22vh;
+        }
+        @media (min-width: 1700px) {
+          width: 22vw;
+          height: 25vh;
+        }
+      }
+      &-desc {
+        height: 30vh;
+        padding: 15px 20px;
+        text-align: left;
+        background-color: #eee;
+        line-height: 160%;
+        font-size: 1.2em;
+        & span {
+          display: block;
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
+        & .fas {
+          margin-right: 5px;
         }
       }
     }
@@ -65,7 +112,8 @@
       flex-direction: row;
       flex-wrap: wrap;
     }
-    @media (min-width: 1440px) {
+    @media (min-width: 1024px) {
+      justify-content: space-around;
     }
   }
   &-moreProjectsButton {
