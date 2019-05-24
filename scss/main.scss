@@ -10,20 +10,30 @@
 @import "partials/components/contact";
 @import "partials/components/footer";
 @import "partials/components/services";
-@import "partials/components/proba";
 
 html,
 body {
   width: 100vw;
   cursor: default;
   @media (max-width: 1024px) {
-    overflow-x: hidden;
+    // overflow-x: auto;
   }
 }
 
 .wrap {
   position: relative;
   font-family: "Montserrat", sans-serif;
+  @media only screen and (max-width: 1024px) {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 1024px) {
+  .services {
+    // overflow-x: hidden;
+    // width: 80%;
+    min-width: 0;
+  }
 }
 
 div {

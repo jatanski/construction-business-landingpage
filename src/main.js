@@ -65,7 +65,7 @@ mobileElements.forEach(el => {
 $('a[href^="#"]').on("click", function(e) {
   e.preventDefault();
   let target = $(this.hash);
-
+  console.log(target.offset().top);
   $("html, body").animate(
     {
       scrollTop: target.offset().top - $(".header__nav").outerHeight()
@@ -73,4 +73,26 @@ $('a[href^="#"]').on("click", function(e) {
     1000,
     "swing"
   );
+});
+
+// Remove atribut "data-aos-offset" in section
+
+const aboutText = document.querySelector(".about__text");
+const aboutImageContainter = document.querySelector(".about__imageContainter");
+console.log(document.documentElement.clientHeight);
+
+window.addEventListener("scroll", function() {
+  if (document.documentElement.clientHeight < 780) {
+    console.log("tam");
+    if (window.scrollY > 500) {
+      console.log("coś");
+      aboutText.classList.add("active");
+    }
+  }
+});
+
+const contactContainer = $(".contact__containter");
+window.addEventListener("scroll", function() {
+  // if(window.scrollY > )
+  console.log(contactContainer.offset().top);
 });

@@ -4,6 +4,7 @@
 .recomendation {
   padding-bottom: 8vh;
   background-color: $recomendation-background;
+  cursor: grab;
   &-header {
     @include rightSectionHeader();
   }

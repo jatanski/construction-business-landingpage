@@ -7,20 +7,66 @@
   justify-content: center;
   align-items: center;
   font-family: $services-fontFamily;
+  @media (max-width: 440px) {
+    margin-top: 40px;
+  }
 }
 
 .services {
-  min-height: 75vh;
+  min-height: 85vh;
+  @media (max-width: 1440px) {
+    min-width: 75vh;
+  }
+  @media (max-width: 1024px) {
+    min-width: 0;
+  }
+
   &-title {
     @include rightSectionHeader();
+    @media (max-width: 440px) {
+      padding: 30px;
+      font-size: 1.4em;
+    }
+    @media (max-width: 380px) {
+      padding: 20px;
+      font-size: 1.3em;
+    }
+    &::after {
+      @media (max-width: 440px) {
+        top: 110px;
+      }
+      @media (max-width: 380px) {
+        top: 95px;
+      }
+    }
   }
   &__container {
     position: relative;
+    max-width: 1800px;
+    margin: 0 auto;
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     grid-template-rows: auto;
     grid-gap: 0 40px;
+    @media (max-width: 1470px) {
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+    @media (max-width: 1240px) {
+      width: 95%;
+      grid-gap: 0 20px;
+    }
+
+    @media (max-width: 1080px) {
+      width: 90%;
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      grid-gap: 50px 40px;
+    }
+    @media (max-width: 420px) {
+      width: 90%;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      grid-gap: 50px 40px;
+    }
     &__room {
       position: relative;
       height: 400px;
@@ -29,6 +75,9 @@
       justify-content: center;
       align-items: center;
       border: 1px solid #000;
+      @media (min-width: 1600px) {
+        height: 500px;
+      }
       &::before {
         content: "";
         position: absolute;
@@ -36,7 +85,6 @@
         left: -2px;
         right: -2px;
         bottom: -2px;
-        // background-color: #fff;
         transform: skew(2deg, 2deg);
         z-index: -1;
       }
@@ -61,16 +109,38 @@
           right: 20px;
           color: rgba(255, 255, 255, 0.1);
           transition: 0.5s;
+          @media (max-width: 768px) {
+            font-size: 5em;
+            right: -40px;
+          }
+          @media (max-width: 420px) {
+            font-size: 3em;
+            top: 150px;
+            right: 40px;
+          }
         }
         &-header {
           margin: 0 0 15px;
           font-size: 30px;
           color: #fff;
+          @media (max-width: 768px) {
+            font-size: 60px;
+          }
+          @media (max-width: 420px) {
+            font-size: 40px;
+          }
         }
         & li {
           padding-top: 10px;
           color: #fff;
           font-size: 16px;
+          @media (max-width: 1080px) {
+            padding-top: 20px;
+            font-size: 30px;
+          }
+          @media (max-width: 420px) {
+            font-size: 22px;
+          }
           & .fas {
             padding-right: 10px;
           }

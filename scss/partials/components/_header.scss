@@ -16,7 +16,7 @@
   justify-content: space-between;
   align-items: center;
   z-index: 4;
-  @media (min-width: 1024px) {
+  @media only screen and (min-width: 1024px) {
     border-bottom: 2px solid rgba(37, 39, 62, 1);
     background-color: $menu-background;
   }
@@ -34,8 +34,8 @@
 }
 
 .header__nav__list {
-  width: 50vw;
-  max-width: 800px;
+  width: 65vw;
+  max-width: 1000px;
   display: flex;
   justify-content: space-around;
   padding-right: 5vh;
@@ -50,7 +50,7 @@
       font-size: 0.9em;
       opacity: 0;
       animation: showNavEl 0.8s $showHeaderDelay ease-out both;
-      @media (max-width: 1440px) {
+      @media only screen and (max-width: 1440px) {
         font-size: 1.2em;
       }
       &::after {
@@ -65,11 +65,11 @@
       }
     }
   }
-  @media (max-width: 1024px) {
+  @media only screen and (max-width: 1024px) {
     display: none;
   }
 
-  @media (min-width: 1440px) {
+  @media only screen and (min-width: 1440px) {
     font-size: 1.6em;
   }
 }
@@ -112,27 +112,27 @@
     line-height: 130%;
     font-family: $nav-fontFamily;
     color: $header-color;
-    @media (min-width: 768px) {
+    @media only screen and (min-width: 768px) {
       font-size: 2.6em;
     }
-    @media (min-width: 1024px) {
+    @media only screen and (min-width: 1024px) {
       font-size: 3.2em;
       line-height: 110%;
     }
-    @media (min-width: 1440px) {
+    @media only screen and (min-width: 1440px) {
       font-size: 4em;
     }
   }
 
   &-desc {
     font-size: 1.5em;
-    @media (min-width: 768px) {
+    @media only screen and (min-width: 768px) {
       font-size: 2em;
     }
-    @media (min-width: 1024px) {
+    @media only screen and (min-width: 1024px) {
       font-size: 1.8em;
     }
-    @media (min-width: 1440px) {
+    @media only screen and (min-width: 1440px) {
       font-size: 2.8em;
     }
   }
