@@ -69,3 +69,12 @@
     font-size: 1.8 * $projects-fontSize;
   }
 }
+
+@mixin logo {
+  letter-spacing: 6px;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.7em;
+  font-family: "Lato", sans-serif;
+}

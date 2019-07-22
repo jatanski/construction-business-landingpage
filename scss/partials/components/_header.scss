@@ -1,4 +1,6 @@
 @import "../variables";
+@import "../mixins";
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 
 .header {
   width: 100vw;
@@ -22,15 +24,24 @@
   }
 }
 
-.header__nav-logo {
+.header__nav__logo {
+  position: relative;
+  left: -10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 10vh;
   width: 30vw;
   max-width: 500px;
-  position: relative;
-  left: -10%;
-  background-color: rgba(237, 29, 79, 0.5);
   opacity: 0;
   animation: showNavEl 1.2s $showHeaderDelay ease-out both;
+  &-text {
+    color: aliceblue;
+    @include logo;
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
 }
 
 .header__nav__list {

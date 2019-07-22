@@ -1,4 +1,5 @@
 @import "../variables";
+@import "../mixins";
 
 .header__mobileMenuButtonContainer {
   position: fixed;
@@ -30,7 +31,7 @@
     }
   }
 
-  span {
+  .menuBar {
     height: 5px;
     width: 100%;
     position: absolute;
@@ -138,6 +139,50 @@
           transition: 0.35s;
         }
       }
+    }
+  }
+}
+
+.header__nav__logo-mobile {
+  position: relative;
+  top: -18%;
+  left: -22%;
+
+  &-text {
+    color: $color-link;
+    @include logo;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 420px) {
+  .header__nav__logo-mobile {
+    top: -21%;
+    left: -12%;
+
+    &-text {
+      font-size: 0.75em;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .header__nav__logo-mobile {
+    left: -8%;
+
+    &-text {
+      font-size: 0.7em;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .header__nav__logo-mobile {
+    top: -21%;
+    left: -8%;
+
+    &-text {
+      font-size: 0.6em;
     }
   }
 }

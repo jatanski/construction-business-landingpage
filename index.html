@@ -47,7 +47,7 @@
       </section> -->
       <header id="header" class="header">
         <nav class="header__nav">
-          <div class="header__nav-logo">Idealnyremont.pl (Tutaj logo)</div>
+          <div class="header__nav__logo"> <h2 class="header__nav__logo-text">Idealnyremont.pl</h2></div>
           <ul class="header__nav__list">
             <li class="header__nav__list-el">
               <a class="link" href="#header">Strona Główna</a>
@@ -71,12 +71,13 @@
         </nav>
         <div class="header__mobileContainer">
           <div class="header__mobileMenuButtonContainer" id="toggle">
-            <span class="top"></span>
-            <span class="middle"></span>
-            <span class="bottom"></span>
+            <span class=" menuBar top"></span>
+            <span class=" menuBar middle"></span>
+            <span class=" menuBar bottom"></span>
           </div>
           <div class="header__mobileContainer__menu" id="overlay">
             <nav class="header__mobileContainer__menu-nav">
+               <div class="header__nav__logo-mobile"> <h2 class="header__nav__logo-mobile-text">Idealnyremont.pl</h2></div>
               <ul>
                 <li><a class="mobileLink" href="#header">Strona Główna</a></li>
                 <li><a class="mobileLink" href="#about">O nas</a></li>
@@ -320,8 +321,8 @@
             <a class="projects__gallery-photo" href="public/img/foto4.jpg"
               ><img
                 src="public/img/foto4-small.jpg"
-                alt="Chuj wie co to jest."
-                title="A to nawet nie wiem skąd się wzięło, pewnie byłem najebany całą robote."
+                alt="Nie wiem co to jest."
+                title="A to nawet nie wiem skąd się wzięło, pewnie spałem na robocie."
                 class="projects__gallery-photo-img"
               />
               <div class="projects__gallery-photo-desc">
@@ -339,8 +340,8 @@
             <a class="projects__gallery-photo" href="public/img/foto4.jpg"
               ><img
                 src="public/img/foto4-small.jpg"
-                alt="Chuj wie co to jest."
-                title="A to nawet nie wiem skąd się wzięło, pewnie byłem najebany całą robote."
+                alt="Nie wiem co to jest."
+                title="A to nawet nie wiem skąd się wzięło, pewnie spałem na robocie."
                 class="projects__gallery-photo-img"
               />
               <div class="projects__gallery-photo-desc">
@@ -358,8 +359,8 @@
             <a class="projects__gallery-photo" href="public/img/foto4.jpg"
               ><img
                 src="public/img/foto4-small.jpg"
-                alt="Chuj wie co to jest."
-                title="A to nawet nie wiem skąd się wzięło, pewnie byłem najebany całą robote."
+                alt="Nie wiem co to jest."
+                title="A to nawet nie wiem skąd się wzięło, pewnie spałem na robocie."
                 class="projects__gallery-photo-img"
               />
               <div class="projects__gallery-photo-desc">
@@ -389,7 +390,7 @@
               data-aos-offset="4500"
               data-aos-once="true"
               data-aos-duration="1000"
-          >Wafle, które już nam zaufały.</h2>
+          >Osoby, które już nam zaufały.</h2>
           <div class="recomendation__slider">
             <div class="recomendation__slider__opinion">
               <div class="recomendation__slider__opinion-photo">
@@ -522,34 +523,34 @@
                 Napisz do nas wiadomość albo zostaw swój numer, a my odezwiemy
                 się do Ciebie.
               </h3>
-              <form class="contact__form" action="">
+              <form id="conctactForm" class="contact__form" action="mailto:ja.tanski@gmail.com" method="post">
                 <input
                   type="text"
-                  id="name"
+                  id="contactName"
                   class="contact__form-input name"
                   placeholder="Imię*"
                 />
                 <input
                   type="text"
-                  id="mail"
+                  id="contactMail"
                   class="contact__form-input mail"
                   placeholder="E-mail"
                 />
                 <input
                   type="number"
-                  id="telephone"
+                  id="contactTelephone"
                   class="contact__form-input telephone"
                   placeholder="Numer telefonu"
                 />
                 <textarea
                   name=""
-                  id=""
+                  id="contactMessage"
                   cols="20"
                   rows="4"
                   class="contact__form-input message"
                   placeholder="Wiadomość"
                 ></textarea>
-                <button class="contact__form-button">
+                <button type="submit" class="contact__form-button">
                   Wyślij wiadomość
                 </button>
               </form>
